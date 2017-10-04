@@ -25,4 +25,10 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         Log.d(TAG,"This method was overridden");
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG,"Method onStop was overridden");
+    }
 }
