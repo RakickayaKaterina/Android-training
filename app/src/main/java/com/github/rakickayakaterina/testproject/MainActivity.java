@@ -32,4 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         Log.d(TAG,"Method onStop was overridden");
     }
+    private void newMethod(){
+        //Method hasn't finished yet.
+    }
 }
