@@ -12,17 +12,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Log.d(TAG,"Some message");
-
-
         Log.d(TAG,"Some text");
-
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         Log.d(TAG,"This method was overridden");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG,"Method onPause was overridden");
     }
 }
