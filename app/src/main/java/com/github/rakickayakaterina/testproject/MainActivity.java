@@ -12,7 +12,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d(TAG,"Some message");
+
+        Log.d(TAG,"Some text");
+
     }
 
     @Override
@@ -32,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         Log.d(TAG,"Method onStop was overridden");
     }
-    private void newMethod(){
-        //Method hasn't finished yet.
+//rebase
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG,"Method onDestroy was overridden");
     }
 }
