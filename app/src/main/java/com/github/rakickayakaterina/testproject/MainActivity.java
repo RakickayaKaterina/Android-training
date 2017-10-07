@@ -28,4 +28,10 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         Log.d(TAG,"Method onStop was overridden");
     }
+//rebase
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG,"Method onDestroy was overridden");
+    }
 }
